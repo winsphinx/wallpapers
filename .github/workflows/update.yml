@@ -1,0 +1,23 @@
+name: update
+
+on:
+  schedule:
+    - cron: "0 15 * * *"
+  workflow_dispatch:
+
+jobs:
+  Upload:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Setup repository
+      uses: actions/checkout@v2
+
+    - name: Create files
+      run: python bing_wallpapers.py
+
+    - name: Commit files
+      uses: EndBug/add-and-commit@v7
+      with:
+        message: "Upload Wallpapers"
+        add: "*.jpg"
