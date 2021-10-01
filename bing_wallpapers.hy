@@ -1,0 +1,5 @@
+(import os re requests)
+(setv URL "https://www.bing.com/")
+(setv NAME (-> (re.compile "url\(/th\?id=(.*?\.jpg).*\)") (.search (-> (requests.get URL) (. text))) (.group 1)))
+(setv ADDRESS (+ URL "th?id=" NAME))
+(with [FILE (open (os.path.join (os.getcwd) "wallpapers" NAME) "wb")] (.write FILE (-> (requests.get ADDRESS) (. content))))
