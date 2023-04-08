@@ -1,4 +1,4 @@
-[![Upload](https://img.shields.io/github/workflow/status/winsphinx/wallpapers/upload?style=plastic)](https://github.com/winsphinx/wallpapers/actions/workflows/upload.yml)
+[![upload](https://github.com/winsphinx/wallpapers/actions/workflows/upload.yml/badge.svg)](https://github.com/winsphinx/wallpapers/actions/workflows/upload.yml)
 [![GitHub repo size](https://img.shields.io/github/repo-size/winsphinx/wallpapers?style=plastic)](https://github.com/winsphinx/wallpapers)
 [![GitHub last commit](https://img.shields.io/github/last-commit/winsphinx/wallpapers?style=plastic)](https://github.com/winsphinx/wallpapers/commits/master)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/w/winsphinx/wallpapers?style=plastic)](https://github.com/winsphinx/wallpapers/graphs/commit-activity)
